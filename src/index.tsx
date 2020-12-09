@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './Home/Home';
-import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {BrowserRouter as Router, Route } from "react-router-dom";
 import Navigation from './Nav/Nav';
 import Events from './Events/Events';
 import Merch from './Merch/merch';
@@ -24,7 +24,8 @@ ReactDOM.render(
           <Merch/>
         </Route>
         <Route path="/merch/:id">
-         <MerchDetails></MerchDetails>
+        <Navigation/> 
+          <MerchDetails/>
         </Route>
     </Router>
   </React.StrictMode>,

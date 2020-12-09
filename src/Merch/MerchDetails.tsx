@@ -8,8 +8,12 @@ interface Props {
     imgPath: string;
     id: number;
 }
+interface Param {
+    id: string ;
+}
 const MerchDetails: React.FC = () => {
-    // const {id = useParams();
+    const params: Param = useParams();
+
     const history = useHistory();
   
     // const book = books.find((book) => {
@@ -20,7 +24,7 @@ const MerchDetails: React.FC = () => {
     // }
   return (
     <div className="MerchDetails">
-     detils 
+     Item {params.id} 
     </div>
   );
 }
