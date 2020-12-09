@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from './Nav/Nav';
 import Events from './Events/Events';
 import Merch from './Merch/merch';
+import MerchDetails from './Merch/MerchDetails';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +22,9 @@ ReactDOM.render(
         <Route exact path="/merch"> 
           <Navigation/> 
           <Merch/>
+        </Route>
+        <Route path="/merch/:id">
+         <MerchDetails></MerchDetails>
         </Route>
     </Router>
   </React.StrictMode>,
