@@ -23,3 +23,27 @@
     height: 30px;
     vertical-align: middle;
 }
+
+@media only screen and (max-width: 600px) {
+    .nav {
+      margin:0 !important;
+      width:100%;
+      text-align: center;
+      padding-bottom: 0%;
+    }
+    .textLogo {
+      display:none;
+    }
+    .navItem {
+      border-top: 1px solid black;
+      width: 100%;
+      margin:0 !important;
+      padding-top: 2%;
+      padding-bottom: 2%;
+  
+    }
+    .navItemImg {
+        display: none;
+    }
+    
+  }
