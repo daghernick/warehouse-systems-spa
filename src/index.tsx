@@ -1,15 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './Home';
+import Home from './Home/Home';
 import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navigation from './Nav';
+import Navigation from './Nav/Nav';
+import Events from './Events/Events';
+import Merch from './Merch/merch';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-        <Route exact path="/">  
+        <Route exact path="/"> 
+          <Navigation/> 
           <Home />
+        </Route>
+        <Route exact path="/events"> 
+          <Navigation/> 
+          <Events/>
+        </Route>
+        <Route exact path="/merch"> 
+          <Navigation/> 
+          <Merch/>
         </Route>
     </Router>
   </React.StrictMode>,

@@ -1,0 +1,25 @@
+.navItem {
+    display: inline-block;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-family: Arial;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 13px;
+    font-size: 16px;
+}
+.nav {
+    background-color: white;
+    align-items: center;
+    margin: 0 25%;
+    text-align: center;
+    padding-bottom: 10px;
+}   
+
+.navItemImg {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
